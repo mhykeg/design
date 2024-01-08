@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href = "styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="script.js"></script>
+    <title>Design Generator</title>
+</head>
+
+<header>
+    <h1>Design Generator</h1>
+    <h2>Create your own design in seconds.</h2>
+</header>
+
+<body>
+    <div class="design" id="design">
+        <p class="greeting" id="greeting">Happy New Year!</p>
+        <p class="signoff" id="signoff">- WAI</p>
+        <div class="client-image" id="client-image"></div>
+    </div>
+    <div class="WAI" id="WAI">
+    </div>
+    <h2>Customise your design below:</h2>
+    <form>
+        <h3>Give us more information</h3>
+        
+        <p>
+            <label for="greeting-text-input">Greeting Text</label>
+            <input type="text" id="greeting-text-input" name="greeting-text-input" maxlength="20" required onchange="changeGreetingText()">
+        </p>
+
+        <p>
+            <label for="signoff-input">Sign-Off</label>
+            <input type="text" id="signoff-input" name="signoff-input" maxlength="15" required onchange="changeSignoff()">
+        </p>
+
+        <p>
+            <p>Color Scheme</p>
+            <input type="radio" id="brown" name="color" value="brown" required onchange="changeColor()">
+            <label for="brown">Brown</label>
+            <input type="radio" id="orange" name="color" value="orange" required onchange="changeColor()">
+            <label for="orange">Orange</label>
+            <input type="radio" id="pink" name="color" value="pink" required onchange="changeColor()">
+            <label for="pink">Pink</label>
+        </p>
+    </form>
+</body>
+
+
+
+<footer>
+
+</footer>
+
+</html>
